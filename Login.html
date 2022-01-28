@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- style disini digunakan untuk mengatur gaya dari suatu kelas atau tombol jika memanggil class di awali dengan . -->
+    <style> 
+        button { 
+           background-color:bisque;
+            border: none;
+           color:black;
+            padding: 10px 25px;
+            text-align: center;
+           text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 2px;
+            cursor: pointer;
+            border-radius: 8px;
+          }
+        </style>
+</head>
+<body>
+    <h3>ISILAH FORM DIBAWAH INI</h3>
+    <!-- form dengan menggunakan tabel hasilnya akan lebih rapih karena akan menyesuaikan garis tepi  -->
+    <center>
+        <table border ="2">
+            <tr>
+               <td width = "100 ">Nama</td> 
+               <td><input type ="text" name="nama"></td>
+            </tr>
+            <tr>
+                <td>Tgl Lahir</td>
+                <td><input type="date" name="tgl_lahir"></td>
+            </tr>
+            <tr>
+                <td>No_tlp</td>
+                <td><input type = "number" name="No_tlp"></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><input type="text" name="alamat"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type ="submit">Submit</button></td>
+            </tr>
+        </table>
+    </center>
+     <!-- contoh form tidak menggunakan tabel -->
+    <form>
+        nama
+        <input type ="text" name="nama"><br>
+        tgl <input type="date" name="tgl_lahir"><br>
+        alamat <input type="text" name="alamat">
+    </form>
+</body>
+</html>
